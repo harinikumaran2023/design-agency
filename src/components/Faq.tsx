@@ -38,7 +38,7 @@ export default function Faq() {
             FAQ
           </span>
 
-          <h2 className="text-5xl font-bold mt-3">
+          <h2 className="text-5xl font-bold text-gray-900">
             Frequently Asked Questions
           </h2>
 

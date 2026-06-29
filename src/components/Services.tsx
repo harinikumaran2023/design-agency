@@ -57,11 +57,11 @@ export default function Services() {
             Our Services
           </span>
 
-          <h2 className="text-5xl font-bold mt-3">
+          <h2 className="text-5xl font-bold mt-3 text-gray-900">
             What We Can Do For You
           </h2>
 
-          <p className="mt-5 text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-5 text-lg text-gray-700 max-w-2xl mx-auto">
             We provide creative digital solutions that help startups,
             businesses, and brands build a powerful online presence.
           </p>
@@ -69,7 +69,6 @@ export default function Services() {
 
         {/* Service Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-
           {services.map((service, index) => {
             const Icon = service.icon;
 
@@ -84,15 +83,14 @@ export default function Services() {
                   <Icon className={service.color} size={34} />
                 </div>
 
-                <h3 className="text-2xl font-bold mb-4">
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">
                   {service.title}
                 </h3>
 
-                <p className="text-gray-600 leading-7">
+                <p className="text-gray-700 leading-7">
                   {service.description}
                 </p>
 
-                {/* Learn More */}
                 <Link
                   href={service.link}
                   className="mt-6 inline-flex items-center gap-2 text-indigo-600 font-semibold hover:gap-3 transition-all"
@@ -100,11 +98,9 @@ export default function Services() {
                   Learn More
                   <ArrowRight size={18} />
                 </Link>
-
               </div>
             );
           })}
-
         </div>
       </div>
     </section>

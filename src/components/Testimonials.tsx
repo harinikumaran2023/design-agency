@@ -24,12 +24,13 @@ export default function Testimonials() {
     <section className="py-24 bg-gray-100">
       <div className="max-w-7xl mx-auto px-6">
 
+        {/* Heading */}
         <div className="text-center mb-16">
           <span className="text-indigo-600 font-semibold uppercase tracking-widest">
-            Testimonials
+            TESTIMONIALS
           </span>
 
-          <h2 className="text-5xl font-bold mt-3">
+          <h2 className="text-5xl font-bold mt-3 text-gray-900">
             What Our Clients Say
           </h2>
 
@@ -39,8 +40,8 @@ export default function Testimonials() {
           </p>
         </div>
 
+        {/* Cards */}
         <div className="grid md:grid-cols-3 gap-8">
-
           {testimonials.map((item, index) => (
             <div
               key={index}
@@ -50,12 +51,12 @@ export default function Testimonials() {
                 ★★★★★
               </div>
 
-              <p className="text-gray-600 leading-7">
+              <p className="text-gray-700 leading-7">
                 "{item.review}"
               </p>
 
               <div className="mt-6">
-                <h3 className="font-bold text-xl">
+                <h3 className="font-bold text-xl text-gray-900">
                   {item.name}
                 </h3>
 
@@ -66,7 +67,6 @@ export default function Testimonials() {
 
             </div>
           ))}
-
         </div>
 
       </div>
